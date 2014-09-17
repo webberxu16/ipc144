@@ -1,3 +1,11 @@
+# CodeLite
+*.project
+*.workspace
+*.mk
+*.txt
+.clang/
+.codelite/
+
 # Visual Studio
 *.sdf
 *.sln
