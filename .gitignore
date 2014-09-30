@@ -2,7 +2,6 @@
 *.project
 *.workspace
 *.mk
-*.txt
 .clang/
 .codelite/
 
