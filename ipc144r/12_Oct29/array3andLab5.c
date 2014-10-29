@@ -16,6 +16,8 @@
          21st,
   use propet english term for sequence numbers
   */
+// for evem more extra marks
+/* print the numbers in ascending order using bubble sort*/
 
 
 int main(){
