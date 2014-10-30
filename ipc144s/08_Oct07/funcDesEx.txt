@@ -17,7 +17,7 @@ int ownerTickets();
 //  gets number of childern and salary in Dollars and then asks 
 // the user for the age
 // and returns the benefit in Dollar and Cents amout
-
+// 
 double benefit(int child, double salary);
 
 // recives location of three integers and sorts them in desc order
