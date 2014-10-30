@@ -13,7 +13,9 @@
 //...
 //...
 // enter the 21st number:
-
+//
+// for even more exrta marks
+//use bubble sort to sort the printed number in ascending order
 #include <stdio.h>
 int main(){
    int
