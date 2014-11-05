@@ -1,8 +1,10 @@
 #ifndef __MYSTRING_H__
 #define __MYSTRING_H__
 int mystrlen(char str[]);
-int mystrcpy(char des[], char src[]);
-int mystrcat(char des[], char src[]);
+char* mystrcpy(char des[], char src[]);
+// copies src int des and returns des
+char* mystrcat(char des[], char src[]);
+// concatenates src to end of des and returns des 
 int mystrcmp(char str1[], char str2[]);
 // returns 
 // negative value if str1 is smaller than str 2
