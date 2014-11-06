@@ -10,7 +10,7 @@ int main(){
    printf("str1: $%-20s$ str2: $%-20s$\n", str1, str2);
    printf("------------------------------\n");
 
-
+   /*
    mystrcpy(str1, "abc");
    printf("str1: $%-20s$ str2: $%-20s$\n", str1, str2);
    mystrcat(str1, str2);
@@ -33,7 +33,7 @@ int main(){
    mystrcpy(str1, "abc");
    mystrcpy(str2, "abcd");
    printf("str1: $%-20s$ str2: $%-20s$\n", str1, str2);
-   printf("mystrcmp(str1, str2): %d\n", mystrcmp(str1, str2));
+   printf("mystrcmp(str1, str2): %d\n", mystrcmp(str1, str2)); */
    return 0;
 }
 
