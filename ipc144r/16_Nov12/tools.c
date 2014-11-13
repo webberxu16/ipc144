@@ -1,3 +1,5 @@
+// this is not tested , may have bugs
+// V1.1
 #include "tools.h"
 void keybFlush(){
    while(getchar() != '\n');
@@ -30,14 +32,14 @@ int getLimInt(int lowerLimit, int upperLimit){
    int val;
    do{
       val = getInt();
-   } while ((val < lowerLimit || val > upperLimit) && printf("Invalid value, %d < value < %d: "));
+   } while ((val < lowerLimit || val > upperLimit) && printf("Invalid value, %d < value < %d: ", lowerLimit, upperLimit));
    return val;
 }
 double getLimDbl(double lowerLimit, double upperLimit){
    double val;
    do{
       val = getDouble();
-   } while ((val < lowerLimit || val > upperLimit) && printf("Invalid value, %d < value < %d: "));
+   } while ((val < lowerLimit || val > upperLimit) && printf("Invalid value, %d < value < %d: ", lowerLimit, upperLimit));
    return val;
 }
 

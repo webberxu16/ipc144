@@ -1,19 +1,15 @@
 #include <stdio.h>
+#include "tools.h"
 int main(){
+   FILE* fptr;
    int i;
-   int num1, num2;
-   char str[50];
-   FILE* myfile;
-   FILE* outfile;
-   myfile = fopen("nums.txt", "rt");
-   outfile = fopen("list.txt", "wt");
+   int num;
+   fptr = fopen("nums.txt", "rt");
    for (i = 0; i < 10; i++){
-      fscanf(myfile,"%s %d %d",str,  &num1, &num2);
-      printf("%-20s, %6d, %6d\n", str, num1, num2);
-      fprintf(outfile,"%-20s, %6d, %6d\n", str, num1, num2);
+      fscanf(fptr, "%d", &num);
+      printf("%d\n", num);
    }
-   fclose(myfile);
-   fclose(outfile);
+   fclose(fptr);
    return 0;
 }
 
