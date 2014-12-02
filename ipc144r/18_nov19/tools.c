@@ -1,8 +1,9 @@
 // this is not tested , may have bugs
-// V1.1
+// V1.2
+#include <stdio.h>
 #include "tools.h"
 void keybFlush(){
-   while(getchar() != '\n');
+   while (getchar() != '\n');
 }
 int getInt(){
    int val;
@@ -39,7 +40,7 @@ double getLimDbl(double lowerLimit, double upperLimit){
    double val;
    do{
       val = getDouble();
-   } while ((val < lowerLimit || val > upperLimit) && printf("Invalid value, %d < value < %d: ", lowerLimit, upperLimit));
+   } while ((val < lowerLimit || val > upperLimit) && printf("Invalid value, %lf < value < %lf: ", lowerLimit, upperLimit));
    return val;
 }
 
@@ -47,9 +48,9 @@ int yes(){
    char ch = 'x';
    int res;
    do{
-     ch = getchar();
-     res = (ch == 'Y' || ch == 'y');
-     keybFlush();
+      ch = getchar();
+      res = (ch == 'Y' || ch == 'y');
+      keybFlush();
    } while (ch != 'y' && ch != 'Y' && ch != 'n' && ch != 'N' && printf("Only (Y)es or (N)o are acceptable: "));
    return res;
 }
